@@ -6,7 +6,7 @@ const NewsCard = ({ news }) => {
   const { _id, title, thumbnail_url, details } = news;
   return (
     <div className="card bg-base-100 shadow-xl space-y-1 my-5 p-4">
-      <div className=" flex justify-between items-center p-4 rounded-t-lg">
+      <div className=" flex justify-between items-center p-4">
         <div className="flex items-center gap-4">
           <h2 className="card-title">{title}</h2>
         </div>

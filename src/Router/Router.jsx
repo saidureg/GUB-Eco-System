@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import Canteen from "../pages/Canteen/Canteen";
 
 const Router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const Router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/canteen",
+        element: <Canteen />,
+        loader: () => fetch("/foods.json"),
       },
     ],
   },

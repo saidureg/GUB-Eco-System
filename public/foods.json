@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1",
+    "category_id": "1",
+    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
+    "name": "Omelette",
+    "price": 30
+  },
+  {
+    "id": "2",
+    "category_id": "1",
+    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
+    "name": "Pancakes",
+    "price": 40
+  },
+  {
+    "id": "3",
+    "category_id": "1",
+    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
+    "name": "Cereal",
+    "price": 60
+  },
+  {
+    "id": "4",
+    "category_id": "2",
+    "name": "Chicken Salad",
+    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
+    "price": 150
+  },
+  {
+    "id": "5",
+    "category_id": "2",
+    "name": "Vegetable Wrap",
+    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
+    "price": 70
+  },
+  {
+    "id": "6",
+    "category_id": "2",
+    "name": "Biriyani",
+    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
+    "price": 110
+  },
+  {
+    "id": "7",
+    "category_id": "2",
+    "name": "Soup",
+    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
+    "price": 50
+  },
+  {
+    "id": "8",
+    "category_id": "3",
+    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
+    "name": "Chips",
+    "price": 20
+  },
+  {
+    "id": "9",
+    "category_id": "3",
+    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
+    "name": "Fruit Salad",
+    "price": 80
+  },
+  {
+    "id": "10",
+    "category_id": "3",
+    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
+    "name": "Nachos",
+    "price": 60
+  },
+  {
+    "id": "11",
+    "category_id": "4",
+    "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
+    "name": "Water",
+    "price": 20
+  },
+  {
+    "id": "12",
+    "category_id": "4",
+    "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
+    "name": "Smoothie",
+    "price": 40
+  },
+  {
+    "id": "13",
+    "category_id": "4",
+    "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
+    "name": "Fanta",
+    "price": 30
+  },
+  {
+    "id": "14",
+    "category_id": "4",
+    "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
+    "name": "Sprite",
+    "price": 50
+  },
+  {
+    "id": "15",
+    "category_id": "4",
+    "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
+    "name": "Coca Cola",
+    "price": 60
+  }
+]
