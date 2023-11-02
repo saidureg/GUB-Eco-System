@@ -16,11 +16,14 @@ const Register = () => {
     const name = form.name.value;
     const studentId = form.studentId.value;
     const gender = form.gender.value;
+    const phone = form.phone.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name, studentId, gender, email, password);
-    if (typeof studentId !== "number" && studentId.length !== 9) {
+    console.log(name, studentId, gender, phone, email, password);
+    if (studentId.length !== 9) {
       return swal("Oops!", "Invalid student Id!", "error");
+    } else if (phone.length !== 10) {
+      return swal("Oops!", "Invalid phone number!", "error");
     } else if (password.length < 6) {
       return swal(
         "Oops!",
@@ -83,7 +86,7 @@ const Register = () => {
                 <span className="label-text font-bold">Student ID</span>
               </label>
               <input
-                type="text"
+                type="number"
                 name="studentId"
                 placeholder="Enter your student Id"
                 className="input input-bordered"
@@ -95,7 +98,6 @@ const Register = () => {
                 <span className="label-text font-bold">Gender : </span>
               </label>
               <label className="flex items-center gap-3 font-semibold px-1 pt-2 cursor-pointer">
-                <span className="label-text">Male</span>
                 <input
                   type="radio"
                   name="gender"
@@ -103,9 +105,9 @@ const Register = () => {
                   className="radio checked:bg-red-500"
                   required
                 />
+                <span className="label-text">Male</span>
               </label>
               <label className="flex items-center gap-3 font-semibold px-1 pt-2 cursor-pointer">
-                <span className="label-text">Female</span>
                 <input
                   type="radio"
                   name="gender"
@@ -113,11 +115,26 @@ const Register = () => {
                   className="radio checked:bg-blue-500"
                   required
                 />
+                <span className="label-text">Female</span>
               </label>
             </div>
-            {/* <div className="form-control">
-              
-            </div> */}
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text font-bold">Phone Number</span>
+              </label>
+              <div className="w-full flex gap-1">
+                <span className="border rounded-l-lg bg-base-100 py-3 px-3">
+                  +880
+                </span>
+                <input
+                  type="number"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  className=" border rounded-r-lg py-3 px-3 w-full"
+                  required
+                />
+              </div>
+            </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-bold">Email</span>
