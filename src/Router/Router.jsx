@@ -5,6 +5,8 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Canteen from "../pages/Canteen/Canteen";
+import BusPoint from "../pages/BusPoint/BusPoint";
+import BusLocationTable from "../pages/BusPoint/BusLocationTable";
 
 const Router = createBrowserRouter([
   {
@@ -21,6 +23,15 @@ const Router = createBrowserRouter([
         path: "/canteen",
         element: <Canteen />,
         loader: () => fetch("/foods.json"),
+      },
+      {
+        path: "/busPoint",
+        element: <BusPoint />,
+        loader: () => fetch("/bus.json"),
+      },
+      {
+        path: "/busLocation/:id",
+        element: <BusLocationTable />,
       },
     ],
   },

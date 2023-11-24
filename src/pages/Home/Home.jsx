@@ -6,7 +6,6 @@ import LeftSideNavbar from "./LeftSideNavbar";
 
 const Home = () => {
   const gubNews = useLoaderData();
-  console.log(gubNews);
 
   return (
     <div>

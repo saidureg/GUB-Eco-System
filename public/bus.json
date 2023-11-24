@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "1",
+    "route_no": "01",
+    "bus_number": "GRN101",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Shewrapara",
+    "pickup_time": "07:00 AM",
+    "driver_name": "John Doe",
+    "driver_phone_no": "+1234567890",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "2",
+    "route_no": "02",
+    "bus_number": "GRN102",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Library",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Jane Smith",
+    "driver_phone_no": "+1987654321",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "3",
+    "route_no": "03",
+    "bus_number": "GRN103",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Science Building",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Bob Johnson",
+    "driver_phone_no": "+1122334455",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "4",
+    "route_no": "04",
+    "bus_number": "GRN104",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Dormitory A",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Emily Davis",
+    "driver_phone_no": "+1555666777",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "5",
+    "route_no": "05",
+    "bus_number": "GRN105",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Engineering Block",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Michael Wilson",
+    "driver_phone_no": "+19994445555",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "6",
+    "route_no": "06",
+    "bus_number": "GRN106",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Auditorium",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Sara Brown",
+    "driver_phone_no": "+1777888999",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "7",
+    "route_no": "07",
+    "bus_number": "GRN107",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Gulistan Bus Stand",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Kevin White",
+    "driver_phone_no": "+18887776666",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "8",
+    "route_no": "08",
+    "bus_number": "GRN108",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Gymnasium",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Linda Miller",
+    "driver_phone_no": "+16669998888",
+    "destination_point": "GUB Campus"
+  },
+  {
+    "_id": "9",
+    "route_no": "09",
+    "bus_number": "GRN109",
+    "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
+    "pickup_point": "Horticulture Garden",
+    "pickup_time": "07:00 AM",
+    "driver_name": "Tom Anderson",
+    "driver_phone_no": "+14443332222",
+    "destination_point": "GUB Campus"
+  }
+]
