@@ -7,6 +7,8 @@ import Register from "../pages/Register/Register";
 import Canteen from "../pages/Canteen/Canteen";
 import BusPoint from "../pages/BusPoint/BusPoint";
 import BusLocationTable from "../pages/BusPoint/BusLocationTable";
+import Dashboard from "../layout/Dashboard";
+import AddItems from "../pages/Dashboard/Moderator/AddItems/AddItems";
 
 const Router = createBrowserRouter([
   {
@@ -22,7 +24,6 @@ const Router = createBrowserRouter([
       {
         path: "/canteen",
         element: <Canteen />,
-        loader: () => fetch("/foods.json"),
       },
       {
         path: "/busPoint",
@@ -42,6 +43,16 @@ const Router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "addItems",
+        element: <AddItems />,
+      },
+    ],
   },
 ]);
 

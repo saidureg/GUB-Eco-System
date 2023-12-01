@@ -1,107 +1,166 @@
 [
   {
-    "id": "1",
-    "category_id": "1",
+    "category_name": "Break Fast",
     "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
     "name": "Omelette",
-    "price": 30
+    "price": 30,
+    "status": "available"
   },
   {
-    "id": "2",
-    "category_id": "1",
-    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
-    "name": "Pancakes",
-    "price": 40
+    "category_name": "Break Fast",
+    "name": "Dal",
+    "price": 20,
+    "image_url": "https://www.indianveggiedelight.com/wp-content/uploads/2020/08/instant-pot-chana-dal-featured.jpg",
+    "status": "available"
+  },
+
+  {
+    "category_name": "Break Fast",
+    "name": "Haluya",
+    "price": 10,
+    "image_url": "https://www.yummytummyaarthi.com/wp-content/uploads/2021/10/IMG_7170-2.jpg",
+    "status": "available"
   },
   {
-    "id": "3",
-    "category_id": "1",
-    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
-    "name": "Cereal",
-    "price": 60
-  },
-  {
-    "id": "4",
-    "category_id": "2",
-    "name": "Chicken Salad",
-    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
-    "price": 150
-  },
-  {
-    "id": "5",
-    "category_id": "2",
-    "name": "Vegetable Wrap",
-    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
-    "price": 70
-  },
-  {
-    "id": "6",
-    "category_id": "2",
-    "name": "Biriyani",
-    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
-    "price": 110
-  },
-  {
-    "id": "7",
-    "category_id": "2",
-    "name": "Soup",
-    "image_url": "https://i.ibb.co/PQ3yN0s/Biriyani.png",
-    "price": 50
-  },
-  {
-    "id": "8",
-    "category_id": "3",
-    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
-    "name": "Chips",
-    "price": 20
-  },
-  {
-    "id": "9",
-    "category_id": "3",
-    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
-    "name": "Fruit Salad",
-    "price": 80
-  },
-  {
-    "id": "10",
-    "category_id": "3",
-    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
-    "name": "Nachos",
-    "price": 60
-  },
-  {
-    "id": "11",
-    "category_id": "4",
+    "category_name": "Drinks",
     "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
     "name": "Water",
-    "price": 20
+    "price": 20,
+    "status": "available"
   },
   {
-    "id": "12",
-    "category_id": "4",
-    "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
-    "name": "Smoothie",
-    "price": 40
+    "category_name": "Drinks",
+    "name": "7 UP",
+    "price": 25,
+    "image_url": "https://splagro.com/wp-content/uploads/2021/11/16022021.1613414036.SNCPSG10.obj_.0.1.jpg.oe_.jpg.pf_.jpg.1350nowm.jpg.1350x-600x600.jpg",
+    "status": "available"
   },
   {
-    "id": "13",
-    "category_id": "4",
+    "category_name": "Lunch",
+    "name": "Dim Khicuri",
+    "price": 80,
+    "image_url": "https://akm-img-a-in.tosshub.com/lingo/atbn/images/story/202208/fotojet_-_2022-08-10t151614.533-sixteen_nine.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Chicken Khicuri",
+    "price": 100,
+    "image_url": "https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/12d6c56c34144272889b5e0d03caf620~tplv-tej9nj120t-origin.webp",
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Biryani",
+    "price": 120,
+    "image_url": "https://veenaazmanov.com/wp-content/uploads/2017/03/Hyderabad-Chicken-Biryani-Dum-Biryani-Kachi-Biryani4.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Plain Rice",
+    "price": 20,
+    "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2020/03/how-to-cook-rice.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Chicken Curry",
+    "price": 80,
+    "image_url": "https://feastwithsafiya.com/wp-content/uploads/2022/03/chicken-curry-recipe.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Snacks",
+    "name": "Singara",
+    "price": 10,
+    "image_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2017/12/singara-recipe-1a.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Snacks",
+    "name": "Samosa",
+    "price": 10,
+    "image_url": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/08/Best-Mutton-Keema-Samosa-Recipe-1.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Fish Curry",
+    "price": 80,
+    "image_url": "https://allwaysdelicious.com/wp-content/uploads/2022/03/kerala-fish-curry-overhead.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Masoor Dal",
+    "price": 10,
+    "image_url": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/masoor-dal-recipe-500x375.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Break Fast",
+    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
+    "name": "Pancakes",
+    "price": 40,
+    "status": "available"
+  },
+  {
+    "category_name": "Break Fast",
+    "image_url": "https://i.ibb.co/VW6kvVZ/Paratha.png",
+    "name": "Cereal",
+    "price": 60,
+    "status": "available"
+  },
+  {
+    "category_name": "Lunch",
+    "name": "Vorta",
+    "price": 15,
+    "image_url": "https://i.ytimg.com/vi/DeJoS-inpMg/maxresdefault.jpg",
+    "status": "available"
+  },
+  {
+    "category_name": "Snacks",
+    "name": "Fried Chicken",
+    "price": 60,
+    "image_url": "https://www.foodandwine.com/thmb/JMrJBrYh3fxDRgkV24_8dZH_zpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-crispy-buttermilk-fried-chicken-hero-04-3a32f9a4a1984ecab79fb28e93d4bc00.jpg",
+    "status": "available"
+  },
+
+  {
+    "category_name": "Snacks",
+    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
+    "name": "Fruit Salad",
+    "price": 80,
+    "status": "available"
+  },
+  {
+    "category_name": "Snacks",
+    "image_url": "https://i.ibb.co/3yJBymK/Snacks.jpg",
+    "name": "Nachos",
+    "price": 60,
+    "status": "available"
+  },
+
+  {
+    "category_name": "Drinks",
     "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
     "name": "Fanta",
-    "price": 30
+    "price": 30,
+    "status": "available"
   },
   {
-    "id": "14",
-    "category_id": "4",
+    "category_name": "Drinks",
     "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
     "name": "Sprite",
-    "price": 50
+    "price": 50,
+    "status": "available"
   },
   {
-    "id": "15",
-    "category_id": "4",
+    "category_name": "Drinks",
     "image_url": "https://i.ibb.co/Sft02w6/coca-cola-fanta-sprite-bottles.jpg",
     "name": "Coca Cola",
-    "price": 60
+    "price": 60,
+    "status": "available"
   }
 ]

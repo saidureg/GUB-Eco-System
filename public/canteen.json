@@ -1,0 +1,134 @@
+{
+  "food_category": {
+    "breakfast": [
+      {
+        "name": "Paratha",
+        "price": 10,
+        "img": "https://shireenanwer.com/wp-content/uploads/2020/07/crispyparatha.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Dal",
+        "price": 10,
+        "img": "https://www.indianveggiedelight.com/wp-content/uploads/2020/08/instant-pot-chana-dal-featured.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Haluya",
+        "price": 10,
+        "image_url": "https://www.yummytummyaarthi.com/wp-content/uploads/2021/10/IMG_7170-2.jpg",
+        "status": "available"
+      }
+    ],
+    "lunch": [
+      {
+        "category_name": "Lunch",
+        "name": "Dim Khicuri",
+        "price": 80,
+        "image_url": "https://akm-img-a-in.tosshub.com/lingo/atbn/images/story/202208/fotojet_-_2022-08-10t151614.533-sixteen_nine.jpg",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Chicken Khicuri",
+        "price": 100,
+        "image_url": "https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/12d6c56c34144272889b5e0d03caf620~tplv-tej9nj120t-origin.webp",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Biryani",
+        "price": 120,
+        "image_url": "https://veenaazmanov.com/wp-content/uploads/2017/03/Hyderabad-Chicken-Biryani-Dum-Biryani-Kachi-Biryani4.jpg",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Plain Rice",
+        "price": 20,
+        "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2020/03/how-to-cook-rice.jpg",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Chicken Curry",
+        "price": 80,
+        "image_url": "https://feastwithsafiya.com/wp-content/uploads/2022/03/chicken-curry-recipe.jpg",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Fish Curry",
+        "price": 80,
+        "image_url": "https://allwaysdelicious.com/wp-content/uploads/2022/03/kerala-fish-curry-overhead.jpg",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Masoor Dal",
+        "price": 10,
+        "image_url": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/masoor-dal-recipe-500x375.jpg",
+        "status": "available"
+      },
+      {
+        "category_name": "Lunch",
+        "name": "Vorta",
+        "price": 15,
+        "image_url": "https://i.ytimg.com/vi/DeJoS-inpMg/maxresdefault.jpg",
+        "status": "available"
+      }
+    ],
+    "snacks": [
+      {
+        "name": "Fried Chicken",
+        "price": 60,
+        "image_url": "https://www.foodandwine.com/thmb/JMrJBrYh3fxDRgkV24_8dZH_zpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-crispy-buttermilk-fried-chicken-hero-04-3a32f9a4a1984ecab79fb28e93d4bc00.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Singara",
+        "price": 10,
+        "image_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2017/12/singara-recipe-1a.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Samosa",
+        "price": 10,
+        "image_url": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/08/Best-Mutton-Keema-Samosa-Recipe-1.jpg",
+        "status": "available"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Water",
+        "price": 20,
+        "image_url": "https://www.factsaboutbpa.org/wp-content/uploads/2018/08/water-bottles.png",
+        "status": "available"
+      },
+      {
+        "name": "7 UP",
+        "price": 25,
+        "image_url": "https://splagro.com/wp-content/uploads/2021/11/16022021.1613414036.SNCPSG10.obj_.0.1.jpg.oe_.jpg.pf_.jpg.1350nowm.jpg.1350x-600x600.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Coca-cola",
+        "price": 25,
+        "image_url": "https://www.coca-cola.com/content/dam/onexp/bd/home-images-bangladesh/brands/coca-cola/coke-250ml.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Tea",
+        "price": 10,
+        "image_url": "https://www.munatycooking.com/wp-content/uploads/2014/04/Indian-Tea-Karak-Chai-feature-image-2022-500x500.jpg",
+        "status": "available"
+      },
+      {
+        "name": "Coffee",
+        "price": 15,
+        "image_url": "https://t4.ftcdn.net/jpg/01/05/90/77/360_F_105907729_4RzHYsHJ2UFt5koUI19fc6VzyFPEjeXe.jpg",
+        "status": "available"
+      }
+    ]
+  }
+}

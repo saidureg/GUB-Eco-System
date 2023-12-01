@@ -1,10 +1,12 @@
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "../../components/Header/Navbar";
 import FoodCard from "./FoodCard";
 import { useEffect, useState } from "react";
+import useMenu from "../../hooks/useMenu";
 
 const Canteen = () => {
-  const loadFoods = useLoaderData();
+  const [menu] = useMenu();
+  // const loadFoods = useLoaderData();
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -36,8 +38,8 @@ const Canteen = () => {
           </div>
         </div>
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {loadFoods.map((food) => (
-            <FoodCard key={food.id} food={food}></FoodCard>
+          {menu.map((food) => (
+            <FoodCard key={food._id} food={food}></FoodCard>
           ))}
         </div>
       </div>

@@ -4,10 +4,9 @@ import { AiOutlineHome, AiOutlineSetting } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { TbLogout } from "react-icons/tb";
 import swal from "sweetalert";
-import { useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
+import useAuth from "../../hooks/useAuth";
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut } = useAuth();
   const handleLogOut = () => {
     logOut()
       .then(() => {
@@ -97,10 +96,14 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="gap-3 text-base md:text-lg lg:text-xl">
+                  <NavLink
+                    to="/dashboard/addItems"
+                    className="gap-3 text-base md:text-lg lg:text-xl"
+                  >
                     <AiOutlineHome /> Dashboard
-                  </a>
+                  </NavLink>
                 </li>
+
                 <li>
                   <a className="gap-3 text-base md:text-lg lg:text-xl">
                     <AiOutlineSetting /> Settings
