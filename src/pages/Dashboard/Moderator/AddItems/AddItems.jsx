@@ -10,7 +10,12 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 const AddItems = () => {
   const axiosPublic = useAxiosPublic();
   const axiosSecured = useAxiosSecure();
-  const { register, handleSubmit, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
   const onSubmit = async (data) => {
     console.log(data);
     const imageFile = { image: data.image[0] };
@@ -46,7 +51,7 @@ const AddItems = () => {
   return (
     <div>
       <SectionTitle subHeading="What's new?" heading="Add an Items" />
-      <div className="bg-white mx-10 px-5 py-4 rounded">
+      <div className="bg-white px-5 py-4 rounded w-1/2 mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-control w-full ">
             <label className="label">
@@ -58,27 +63,33 @@ const AddItems = () => {
               {...register("name", { required: true, maxLength: 50 })}
               className="input input-bordered w-full "
             />
+            {errors.name && (
+              <span className="text-red-600">Recipe name is required</span>
+            )}
+          </div>
+          {/* category */}
+          <div className="form-control w-full ">
+            <label className="label">
+              <span className="label-text">Category*</span>
+            </label>
+            <select
+              defaultValue="default"
+              {...register("category_name", { required: true })}
+              className="select select-bordered w-full "
+            >
+              <option disabled value="default">
+                Select a category
+              </option>
+              <option value="breakFast">Break Fast</option>
+              <option value="lunch">Lunch</option>
+              <option value="snacks">Snacks</option>
+              <option value="drinks">Drinks</option>
+            </select>
+            {errors.category_name && (
+              <span className="text-red-600">Category is required</span>
+            )}
           </div>
           <div className="flex gap-6 my-6">
-            {/* category */}
-            <div className="form-control w-full ">
-              <label className="label">
-                <span className="label-text">Category*</span>
-              </label>
-              <select
-                defaultValue="default"
-                {...register("category_name", { required: true })}
-                className="select select-bordered w-full "
-              >
-                <option disabled value="default">
-                  Select a category
-                </option>
-                <option value="breakFast">Break Fast</option>
-                <option value="lunch">Lunch</option>
-                <option value="snacks">Snacks</option>
-                <option value="drinks">Drinks</option>
-              </select>
-            </div>
             {/* price */}
             <div className="form-control w-full ">
               <label className="label">
@@ -90,6 +101,9 @@ const AddItems = () => {
                 {...register("price", { required: true, maxLength: 20 })}
                 className="input input-bordered w-full "
               />
+              {errors.price && (
+                <span className="text-red-600">Price is required</span>
+              )}
             </div>
           </div>
           <input
@@ -97,7 +111,6 @@ const AddItems = () => {
             {...register("image", { required: true })}
             className="file-input w-full max-w-xs block my-6"
           />
-
           <button className="btn bg-gradient-to-r from-[#835D23] to-[#B58130] text-white">
             Add Items <FaUtensils />
           </button>

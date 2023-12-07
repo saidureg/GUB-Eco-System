@@ -3,7 +3,7 @@ import { GrLogout } from "react-icons/gr";
 import { AiOutlineBars } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
 import useAuth from "../../../hooks/useAuth";
-import logo from "../../../assets/Logo.png";
+// import logo from "../../../assets/Logo.png";
 import MenuItem from "./MenuItem";
 import ModeratorMenu from "./Menu/ModeratorMenu";
 
@@ -22,7 +22,9 @@ const Sidebar = () => {
       {/* Mobile Screen Navbar */}
       <div className="bg-gray-100 text-gray-800 flex justify-between md:hidden">
         <div>
-          <div className="block cursor-pointer p-4 font-bold">{logo}</div>
+          <div className="block cursor-pointer p-4 font-bold">
+            <h3 className="text-2xl font-medium text-green-500">GUB Canteen</h3>
+          </div>
         </div>
 
         <button
@@ -41,7 +43,9 @@ const Sidebar = () => {
         <div>
           <div>
             <div className="w-full hidden md:flex px-4 py-2 shadow-lg rounded-lg justify-center items-center bg-rose-100 mx-auto">
-              {logo}
+              <h3 className="text-2xl font-medium text-green-500">
+                GUB Canteen
+              </h3>
             </div>
           </div>
 

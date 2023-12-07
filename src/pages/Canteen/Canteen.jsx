@@ -38,7 +38,7 @@ const Canteen = () => {
           </div>
         </div>
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {menu.map((food) => (
+          {menu?.map((food) => (
             <FoodCard key={food._id} food={food}></FoodCard>
           ))}
         </div>

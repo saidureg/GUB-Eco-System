@@ -1,6 +1,5 @@
 [
   {
-    "_id": "1",
     "route_no": "01",
     "bus_number": "GRN101",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -11,7 +10,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "2",
     "route_no": "02",
     "bus_number": "GRN102",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -22,7 +20,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "3",
     "route_no": "03",
     "bus_number": "GRN103",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -33,7 +30,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "4",
     "route_no": "04",
     "bus_number": "GRN104",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -44,7 +40,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "5",
     "route_no": "05",
     "bus_number": "GRN105",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -55,7 +50,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "6",
     "route_no": "06",
     "bus_number": "GRN106",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -66,7 +60,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "7",
     "route_no": "07",
     "bus_number": "GRN107",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -77,7 +70,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "8",
     "route_no": "08",
     "bus_number": "GRN108",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
@@ -88,7 +80,6 @@
     "destination_point": "GUB Campus"
   },
   {
-    "_id": "9",
     "route_no": "09",
     "bus_number": "GRN109",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",

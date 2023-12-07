@@ -1,10 +1,12 @@
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "../../components/Header/Navbar";
 import { useEffect, useState } from "react";
 import BusCard from "./BusCard";
+import useBus from "../../hooks/useBus";
 
 const BusPoint = () => {
-  const loadBus = useLoaderData();
+  // const loadBus = useLoaderData();
+  const [buses] = useBus();
   const [busPickup, setBusPickup] = useState([]);
 
   useEffect(() => {
@@ -35,7 +37,7 @@ const BusPoint = () => {
           </div>
         </div>
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {loadBus.map((bus) => (
+          {buses?.map((bus) => (
             <BusCard key={bus._id} bus={bus}></BusCard>
           ))}
         </div>

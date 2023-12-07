@@ -15,7 +15,6 @@ const Home = () => {
           <LeftSideNavbar />
         </div>
         <div className="col-span-2">
-          <h3>Home</h3>
           {gubNews.map((news) => (
             <NewsCard key={news._id} news={news}></NewsCard>
           ))}

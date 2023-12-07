@@ -28,7 +28,6 @@ const Router = createBrowserRouter([
       {
         path: "/busPoint",
         element: <BusPoint />,
-        loader: () => fetch("/bus.json"),
       },
       {
         path: "/busLocation/:id",

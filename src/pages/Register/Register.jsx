@@ -5,10 +5,21 @@ import { updateProfile } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import logo from "../../assets/Logo.png";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { useQuery } from "@tanstack/react-query";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
+  const axiosPublic = useAxiosPublic();
+
+  const { data: users = [] } = useQuery({
+    queryKey: ["users"],
+    queryFn: async () => {
+      const res = await axiosPublic.get("/users");
+      return res.data;
+    },
+  });
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -24,6 +35,8 @@ const Register = () => {
       return swal("Oops!", "Invalid student Id!", "error");
     } else if (phone.length !== 10) {
       return swal("Oops!", "Invalid phone number!", "error");
+    } else if (users.find((user) => user.studentId === studentId)) {
+      return swal("Oops!", "Student Id is already exists!", "error");
     } else if (password.length < 6) {
       return swal(
         "Oops!",
@@ -48,15 +61,27 @@ const Register = () => {
           displayName: name,
         })
           .then(() => {
-            toast("Account created successfully");
-            navigate("/");
+            const userInfo = {
+              name,
+              studentId,
+              gender,
+              phone,
+              email,
+            };
+            axiosPublic.post("/users", userInfo).then((res) => {
+              if (res.data.insertedId) {
+                toast("Account created successfully");
+                form.reset();
+                navigate("/");
+              }
+            });
           })
           .catch((error) => {
             return swal("Oops!", error.message, "error");
           });
       })
-      .catch(() => {
-        return swal("Oops!", "Something went wrong", "error");
+      .catch((error) => {
+        return swal("Oops!", error.message, "error");
       });
   };
 
