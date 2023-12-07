@@ -9,6 +9,14 @@ import BusPoint from "../pages/BusPoint/BusPoint";
 import BusLocationTable from "../pages/BusPoint/BusLocationTable";
 import Dashboard from "../layout/Dashboard";
 import AddItems from "../pages/Dashboard/Moderator/AddItems/AddItems";
+import UserProfile from "../pages/Dashboard/User/UserProfile";
+import AdminRoute from "./AdminRoute";
+import ModeratorRoute from "./ModeratorRoute";
+import Statistics from "../pages/Dashboard/Admin/Statistics";
+import ManageUsers from "../pages/Dashboard/Admin/ManageUsers";
+import Club from "../pages/Club/Club";
+import Cart from "../pages/Dashboard/User/Cart";
+import PrivateRoute from "./PrivateRoute";
 
 const Router = createBrowserRouter([
   {
@@ -33,6 +41,10 @@ const Router = createBrowserRouter([
         path: "/busLocation/:id",
         element: <BusLocationTable />,
       },
+      {
+        path: "/club",
+        element: <Club />,
+      },
     ],
   },
   {
@@ -45,11 +57,46 @@ const Router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <Dashboard />,
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
     children: [
+      // for user
+      {
+        path: "userProfile",
+        element: <UserProfile />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
+      },
+      // for moderator
       {
         path: "addItems",
-        element: <AddItems />,
+        element: (
+          <ModeratorRoute>
+            <AddItems />
+          </ModeratorRoute>
+        ),
+      },
+      // for Admin
+      {
+        path: "statistics",
+        element: (
+          <AdminRoute>
+            <Statistics />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "manageUsers",
+        element: (
+          <AdminRoute>
+            <ManageUsers />
+          </AdminRoute>
+        ),
       },
     ],
   },

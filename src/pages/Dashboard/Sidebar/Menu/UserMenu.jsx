@@ -1,4 +1,4 @@
-import { FaRegAddressBook, FaList, FaUser } from "react-icons/fa";
+import { FaUser, FaShoppingCart, FaMoneyBillAlt } from "react-icons/fa";
 import MenuItem from "../MenuItem";
 
 const UserMenu = () => {
@@ -11,15 +11,15 @@ const UserMenu = () => {
       />
 
       <MenuItem
-        icon={FaRegAddressBook}
-        label="Add Product"
-        address="/dashboard/addProduct"
+        icon={FaShoppingCart}
+        label="My Cart"
+        address="/dashboard/cart"
       />
 
       <MenuItem
-        icon={FaList}
-        label="My Products"
-        address="/dashboard/myProduct"
+        icon={FaMoneyBillAlt}
+        label="Payment History"
+        address="/dashboard/paymentHistory"
       />
     </>
   );

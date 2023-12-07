@@ -6,12 +6,16 @@ import useAuth from "../../../hooks/useAuth";
 // import logo from "../../../assets/Logo.png";
 import MenuItem from "./MenuItem";
 import ModeratorMenu from "./Menu/ModeratorMenu";
+import useAdmin from "../../../hooks/useAdmin";
+import useModerator from "../../../hooks/useModerator";
+import UserMenu from "./Menu/UserMenu";
+import AdminMenu from "./Menu/AdminMenu";
 
 const Sidebar = () => {
   const { logOut } = useAuth();
   const [isActive, setActive] = useState(false);
-  //   const [isAdmin] = useAdmin();
-  //   const [isModerator] = useModerator();
+  const [isAdmin] = useAdmin();
+  const [isModerator] = useModerator();
   // Sidebar Responsive Handler
   const handleToggle = () => {
     setActive(!isActive);
@@ -53,7 +57,7 @@ const Sidebar = () => {
           <div className="flex flex-col justify-between flex-1 mt-6">
             <nav>
               {/* Menu Items */}
-              {/* {!isAdmin ? (
+              {!isAdmin ? (
                 !isModerator ? (
                   <UserMenu />
                 ) : (
@@ -61,8 +65,8 @@ const Sidebar = () => {
                 )
               ) : (
                 <AdminMenu />
-              )} */}
-              <ModeratorMenu />
+              )}
+              {/* <ModeratorMenu /> */}
             </nav>
           </div>
         </div>

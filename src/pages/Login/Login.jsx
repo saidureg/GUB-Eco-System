@@ -7,8 +7,9 @@ import logo from "../../assets/Logo.png";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
-  const location = useLocation();
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ const Login = () => {
         toast("You have successfully logged in");
 
         // navigate after login
-        navigate(location?.state ? location.state : "/");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error(error);

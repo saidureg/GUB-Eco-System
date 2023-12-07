@@ -3,10 +3,15 @@ import logo from "../../assets/Logo.png";
 import { AiOutlineHome, AiOutlineSetting } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { TbLogout } from "react-icons/tb";
+import { FaShoppingCart } from "react-icons/fa";
 import swal from "sweetalert";
 import useAuth from "../../hooks/useAuth";
+import useAdmin from "../../hooks/useAdmin";
+import useModerator from "../../hooks/useModerator";
 const Navbar = () => {
   const { user, logOut } = useAuth();
+  const [isAdmin] = useAdmin();
+  const [isModerator] = useModerator();
   const handleLogOut = () => {
     logOut()
       .then(() => {
@@ -33,6 +38,16 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/club">Club</NavLink>
+      </li>
+      <li>
+        <Link to="/dashboard/cart">
+          <button className="flex items-center gap-2">
+            <FaShoppingCart className="text-2xl" />
+            <div className="badge badge-secondary absolute top-0 right-0 -mr-6">
+              +0
+            </div>
+          </button>
+        </Link>
       </li>
     </>
   );
@@ -97,7 +112,13 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/dashboard/addItems"
+                    to={
+                      isAdmin
+                        ? "/dashboard/statistics"
+                        : isModerator
+                        ? "/dashboard/addItems"
+                        : "/dashboard/userProfile"
+                    }
                     className="gap-3 text-base md:text-lg lg:text-xl"
                   >
                     <AiOutlineHome /> Dashboard
