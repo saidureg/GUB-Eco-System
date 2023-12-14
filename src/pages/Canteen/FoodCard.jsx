@@ -1,8 +1,60 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import Swal from "sweetalert2";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
+import { useLocation, useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
+import useCart from "../../hooks/useCart";
 const FoodCard = ({ food }) => {
-  const { name, image_url, price } = food;
+  const { _id, name, image_url, price } = food;
+  const { user } = useAuth();
+  const [, refetch] = useCart();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const axiosSecure = useAxiosSecure();
   const [count, setCount] = useState(0);
+  const handleAddToCart = () => {
+    if (user && user.email) {
+      // add to cart
+      const cartItem = {
+        menuId: _id,
+        name,
+        image_url,
+        price,
+        quantity: count,
+        email: user.email,
+      };
+      axiosSecure.post("/carts", cartItem).then((res) => {
+        if (res.data.insertedId) {
+          Swal.fire({
+            position: "top-end",
+            title: "Success!",
+            text: `${name} added to cart`,
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          // refetch cart to updated the cart items count
+          refetch();
+        }
+      });
+    } else {
+      // redirect to login
+      Swal.fire({
+        title: "You are not logged in!",
+        text: "Please login to add to cart",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, login!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/login", { state: { from: location } });
+        }
+      });
+    }
+  };
   return (
     <div className="card bg-base-100 shadow-xl">
       <h2 className="pt-4 pb-2 text-[#403F3F] text-lg font-bold text-center">
@@ -36,7 +88,10 @@ const FoodCard = ({ food }) => {
           </span>
         </p>
         <div className="card-actions mt-2">
-          <button className="btn text-white bg-[#00FF00] hover:text-[#00FF00]">
+          <button
+            onClick={handleAddToCart}
+            className="btn text-white bg-[#00FF00] hover:text-[#00FF00]"
+          >
             Add To Cart
           </button>
         </div>

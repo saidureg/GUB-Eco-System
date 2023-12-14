@@ -22,8 +22,7 @@ const Login = () => {
     }
     e.currentTarget.reset();
     signIn(email, password)
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
         toast("You have successfully logged in");
 
         // navigate after login

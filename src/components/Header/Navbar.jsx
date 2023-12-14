@@ -8,10 +8,12 @@ import swal from "sweetalert";
 import useAuth from "../../hooks/useAuth";
 import useAdmin from "../../hooks/useAdmin";
 import useModerator from "../../hooks/useModerator";
+import useCart from "../../hooks/useCart";
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isAdmin] = useAdmin();
   const [isModerator] = useModerator();
+  const [cart] = useCart();
   const handleLogOut = () => {
     logOut()
       .then(() => {
@@ -44,7 +46,7 @@ const Navbar = () => {
           <button className="flex items-center gap-2">
             <FaShoppingCart className="text-2xl" />
             <div className="badge badge-secondary absolute top-0 right-0 -mr-6">
-              +0
+              +{cart.length}
             </div>
           </button>
         </Link>

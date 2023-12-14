@@ -17,6 +17,7 @@ import ManageUsers from "../pages/Dashboard/Admin/ManageUsers";
 import Club from "../pages/Club/Club";
 import Cart from "../pages/Dashboard/User/Cart";
 import PrivateRoute from "./PrivateRoute";
+import Payment from "../pages/Dashboard/User/Payment/Payment";
 
 const Router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ const Router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "payment",
+        element: <Payment />,
       },
       // for moderator
       {
