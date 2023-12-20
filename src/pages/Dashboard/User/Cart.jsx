@@ -45,7 +45,7 @@ const Cart = () => {
         <h3 className="text-xl">Total Price: ${totalPrice.toFixed(2)}</h3>
         {cart.length ? (
           <Link to="/dashboard/payment">
-            <button className="btn btn-primary cursor-pointer">Pay</button>
+            <button className="btn btn-primary ">Pay</button>
           </Link>
         ) : (
           <button className="btn btn-primary" disabled>

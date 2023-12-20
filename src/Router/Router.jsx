@@ -18,6 +18,7 @@ import Club from "../pages/Club/Club";
 import Cart from "../pages/Dashboard/User/Cart";
 import PrivateRoute from "./PrivateRoute";
 import Payment from "../pages/Dashboard/User/Payment/Payment";
+import PaymentHistory from "../pages/Dashboard/User/PaymentHistory/PaymentHistory";
 
 const Router = createBrowserRouter([
   {
@@ -76,6 +77,10 @@ const Router = createBrowserRouter([
       {
         path: "payment",
         element: <Payment />,
+      },
+      {
+        path: "paymentHistory",
+        element: <PaymentHistory />,
       },
       // for moderator
       {

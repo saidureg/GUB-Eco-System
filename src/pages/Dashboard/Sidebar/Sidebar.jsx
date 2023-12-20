@@ -48,7 +48,12 @@ const Sidebar = () => {
           <div>
             <div className="w-full hidden md:flex px-4 py-2 shadow-lg rounded-lg justify-center items-center bg-rose-100 mx-auto">
               <h3 className="text-2xl font-medium text-green-500">
-                GUB Canteen
+                {/* dashboard */}
+                {!isAdmin
+                  ? !isModerator
+                    ? "User Dashboard"
+                    : " Moderator Dashboard"
+                  : " Admin Dashboard"}
               </h3>
             </div>
           </div>
