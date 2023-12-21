@@ -12,9 +12,9 @@ const BusCard = ({ bus }) => {
     destination_point,
   } = bus;
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card h-[430px] bg-base-100 shadow-xl">
       <h2 className="pt-4 pb-2 text-[#403F3F] text-lg font-bold text-center">
-        Route-{route_no}
+        {route_no}
       </h2>
       <figure className="px-5 ">
         <img src={image} alt={name} className="rounded-xl w-full h-[175px]" />
@@ -33,7 +33,7 @@ const BusCard = ({ bus }) => {
               Schedule
             </button>
           </Link>
-          <button className="btn btn-primary">LOcation</button>
+          <button className="btn btn-primary">Location</button>
         </div>
       </div>
     </div>

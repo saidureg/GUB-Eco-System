@@ -1,6 +1,6 @@
 [
   {
-    "route_no": "01",
+    "route_no": "Route-1",
     "bus_number": "GRN101",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Shewrapara",
@@ -10,7 +10,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "02",
+    "route_no": "Route-2",
     "bus_number": "GRN102",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Library",
@@ -20,7 +20,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "03",
+    "route_no": "Route-3",
     "bus_number": "GRN103",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Science Building",
@@ -30,7 +30,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "04",
+    "route_no": "Route-4",
     "bus_number": "GRN104",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Dormitory A",
@@ -40,7 +40,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "05",
+    "route_no": "Route-5",
     "bus_number": "GRN105",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Engineering Block",
@@ -50,7 +50,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "06",
+    "route_no": "Route-6",
     "bus_number": "GRN106",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Auditorium",
@@ -60,7 +60,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "07",
+    "route_no": "Route-7",
     "bus_number": "GRN107",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Gulistan Bus Stand",
@@ -70,7 +70,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "08",
+    "route_no": "Route-8",
     "bus_number": "GRN108",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Gymnasium",
@@ -80,7 +80,7 @@
     "destination_point": "GUB Campus"
   },
   {
-    "route_no": "09",
+    "route_no": "Route-9",
     "bus_number": "GRN109",
     "image": "https://i.ibb.co/KWGt2yz/gub-bus.png",
     "pickup_point": "Horticulture Garden",

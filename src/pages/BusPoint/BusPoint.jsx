@@ -8,12 +8,20 @@ const BusPoint = () => {
   // const loadBus = useLoaderData();
   const [buses] = useBus();
   const [busPickup, setBusPickup] = useState([]);
+  const [categoryBus, setCategoryBus] = useState([]);
 
   useEffect(() => {
     fetch("busPickup.json")
       .then((res) => res.json())
       .then((data) => setBusPickup(data));
   }, []);
+
+  const handleCategory = (e) => {
+    const routeNo = e.target.innerText;
+    const filteredBus = buses.filter((bus) => bus.route_no === routeNo);
+    setCategoryBus(filteredBus);
+  };
+
   return (
     <div>
       <Navbar />
@@ -23,12 +31,11 @@ const BusPoint = () => {
             <h3 className="text-2xl">Route Category </h3>
             <div className="space-y-4">
               {busPickup.map((category, idx) => (
-                <NavLink
-                  to={`/categories/${category.id}`}
-                  className="block px-4"
-                  key={idx}
-                >
-                  <ul className="btn-outline p-3 rounded-lg">
+                <NavLink className="block px-4" key={idx}>
+                  <ul
+                    onClick={handleCategory}
+                    className="btn-outline p-3 rounded-lg"
+                  >
                     {category.name}
                   </ul>
                 </NavLink>
@@ -37,9 +44,11 @@ const BusPoint = () => {
           </div>
         </div>
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {buses?.map((bus) => (
-            <BusCard key={bus._id} bus={bus}></BusCard>
-          ))}
+          {categoryBus.length > 0
+            ? categoryBus.map((bus) => (
+                <BusCard key={bus._id} bus={bus}></BusCard>
+              ))
+            : buses?.map((bus) => <BusCard key={bus._id} bus={bus}></BusCard>)}
         </div>
       </div>
     </div>

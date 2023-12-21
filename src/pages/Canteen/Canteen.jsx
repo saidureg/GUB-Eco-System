@@ -19,7 +19,6 @@ const Canteen = () => {
   const handleCategory = (e) => {
     const category = e.target.innerText;
     const filteredMenu = menu.filter((food) => food.category_name === category);
-    console.log(category, filteredMenu);
     setCategoryMenu(filteredMenu);
   };
 
