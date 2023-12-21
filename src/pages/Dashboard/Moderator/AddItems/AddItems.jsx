@@ -29,6 +29,7 @@ const AddItems = () => {
         name: data.name,
         category_name: data.category_name,
         price: parseInt(data.price),
+        quantity: parseInt(data.quantity),
         image_url: res.data.data.display_url,
       };
       const menuRes = await axiosSecured.post("/menu", menuItem);
@@ -105,6 +106,21 @@ const AddItems = () => {
                 <span className="text-red-600">Price is required</span>
               )}
             </div>
+          </div>
+          {/* quantity */}
+          <div className="form-control w-full ">
+            <label className="label">
+              <span className="label-text">Quantity*</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Quantity"
+              {...register("quantity", { required: true, maxLength: 20 })}
+              className="input input-bordered w-full "
+            />
+            {errors.quantity && (
+              <span className="text-red-600">Quantity is required</span>
+            )}
           </div>
           <input
             type="file"

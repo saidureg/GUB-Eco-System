@@ -8,12 +8,20 @@ const Canteen = () => {
   const [menu] = useMenu();
   // const loadFoods = useLoaderData();
   const [categories, setCategories] = useState([]);
+  const [categoryMenu, setCategoryMenu] = useState([]);
 
   useEffect(() => {
     fetch("foodCategory.json")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
+
+  const handleCategory = (e) => {
+    const category = e.target.innerText;
+    const filteredMenu = menu.filter((food) => food.category_name === category);
+    console.log(category, filteredMenu);
+    setCategoryMenu(filteredMenu);
+  };
 
   return (
     <div>
@@ -24,12 +32,11 @@ const Canteen = () => {
             <h3 className="text-2xl">Food Category </h3>
             <div className="space-y-4">
               {categories.map((category, idx) => (
-                <NavLink
-                  to={`/categories/${category.id}`}
-                  className="block px-4"
-                  key={idx}
-                >
-                  <ul className="btn-outline p-3 rounded-lg">
+                <NavLink className="block px-4" key={idx}>
+                  <ul
+                    onClick={handleCategory}
+                    className="btn-outline p-3 rounded-lg"
+                  >
                     {category.name}
                   </ul>
                 </NavLink>
@@ -38,9 +45,13 @@ const Canteen = () => {
           </div>
         </div>
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {menu?.map((food) => (
-            <FoodCard key={food._id} food={food}></FoodCard>
-          ))}
+          {categoryMenu.length > 0
+            ? categoryMenu.map((food) => (
+                <FoodCard key={food._id} food={food}></FoodCard>
+              ))
+            : menu?.map((food) => (
+                <FoodCard key={food._id} food={food}></FoodCard>
+              ))}
         </div>
       </div>
     </div>

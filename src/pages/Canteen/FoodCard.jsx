@@ -15,6 +15,17 @@ const FoodCard = ({ food }) => {
   const [count, setCount] = useState(0);
   const handleAddToCart = () => {
     if (user && user.email) {
+      // check if count is 0
+      if (count === 0) {
+        return Swal.fire({
+          position: "top-end",
+          title: "Error!",
+          text: "Please select quantity",
+          icon: "error",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
       // add to cart
       const cartItem = {
         menuId: _id,
