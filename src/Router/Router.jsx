@@ -19,6 +19,7 @@ import Cart from "../pages/Dashboard/User/Cart";
 import PrivateRoute from "./PrivateRoute";
 import Payment from "../pages/Dashboard/User/Payment/Payment";
 import PaymentHistory from "../pages/Dashboard/User/PaymentHistory/PaymentHistory";
+import ClubNews from "../pages/Dashboard/Moderator/ClubNews/ClubNews";
 
 const Router = createBrowserRouter([
   {
@@ -46,7 +47,7 @@ const Router = createBrowserRouter([
       {
         path: "/club",
         element: <Club />,
-        loader: () => fetch("/clubNews.json"),
+        loader: () => fetch("http://localhost:5000/club"),
       },
     ],
   },
@@ -89,6 +90,14 @@ const Router = createBrowserRouter([
         element: (
           <ModeratorRoute>
             <AddItems />
+          </ModeratorRoute>
+        ),
+      },
+      {
+        path: "addClubNews",
+        element: (
+          <ModeratorRoute>
+            <ClubNews />
           </ModeratorRoute>
         ),
       },

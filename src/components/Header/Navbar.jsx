@@ -110,9 +110,12 @@ const Navbar = () => {
                 className="mt-3 z-[1] p-1 divide-y-2 space-y-4 md:p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-48 md:w-52 lg:w-56"
               >
                 <li>
-                  <a className="gap-3 text-sm md:text-base lg:text-lg">
+                  <NavLink
+                    to="/dashboard/userProfile"
+                    className="gap-3 text-sm md:text-base lg:text-lg"
+                  >
                     <CgProfile /> Profile
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink

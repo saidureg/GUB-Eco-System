@@ -46,8 +46,6 @@ const AddItems = () => {
         });
       }
     }
-
-    console.log("with image url", res.data);
   };
   return (
     <div>
