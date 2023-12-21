@@ -46,6 +46,7 @@ const Router = createBrowserRouter([
       {
         path: "/club",
         element: <Club />,
+        loader: () => fetch("/clubNews.json"),
       },
     ],
   },

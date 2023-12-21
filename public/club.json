@@ -1,0 +1,68 @@
+{
+  "status": "success",
+  "club_list": [
+    {
+      "club_name": "CSE",
+      "club_post": [
+        {
+          "posted_by": "John",
+          "posted_on": "2023-12-21 12:50:10 PM",
+          "images": "https://www.facebook.com/photo/?fbid=732770102207187&set=gm.3506839329557504&idorvanity=1455061688068622",
+          "content": "We are excited to announce that our group has reached a remarkable milestone of 7000+ members! Thank you all for being with Green University Computer Club."
+        },
+        {
+          "posted_by": "Sam",
+          "posted_on": "2023-12-20 10:25:35 AM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/410839783_888309906454763_3292626254748155471_n.jpg?stp=dst-jpg_p240x240&_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGJrApAypxfu_2anvQWEeB-4iAAo0-S4d_iIACjT5Lh326NCkDV7UzbjSM4OZelgPox5k313TLNgnt6m5we9Oob&_nc_ohc=gFWxUGGuP9EAX9AghxP&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCu3FFBYtJHUDy0eXX6MIZUV91UQhmu7OYLFSuDbxA1ww&oe=6588C9BE",
+          "content": "Invitation for Joining the Discussion Session on Victory Day 2023"
+        },
+        {
+          "posted_by": "Peter",
+          "posted_on": "2023-12-18 08:50:29 AM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/409720538_728910505926480_6398930692677365559_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c42490&_nc_eui2=AeEe5UkfIRlZuhFQPjhYWvAh7MZjbFjm83_sxmNsWObzf33sEo21AESH6uVxmPzGzY8lMAKzagsMSpwCvrdolUPJ&_nc_ohc=ZtrcEeXfQ8wAX-u3ZPq&_nc_ht=scontent.fdac31-1.fna&oh=00_AfBlKztsA_Lk2KcVeMTFmXWNDPBuSFilszSFcUW5B7_cyw&oe=65892FDD",
+          "content": "Green University Computer Club (GUCC) Executive Committee Meeting Date: 14 December 2023 (Thursday) Venue: 5th floor, Admin Building, Green University of Bangladesh Campus"
+        }
+      ]
+    },
+    {
+      "club_name": "EEE",
+      "club_post": [
+        {
+          "posted_by": "Herry",
+          "posted_on": "2023-12-15 09:40:10 AM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/409071801_748395200638216_1964437275784136590_n.jpg?stp=dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFBoiLHWRty782OwbiMTAdrpsggiNgkfwGmyCCI2CR_AZSgHoJdyZ5ecR2bu5vQ3SDP8n9nxuc06ucTxz6TWLJT&_nc_ohc=OtL_-QLUny8AX8ZFhte&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCNnwW9_T9t0h_JPlcAuq468IQrAWVPs0FLPXLiGw6ZuA&oe=6588DDFB",
+          "content": "The kick off of the 2023 5th International Conference on Sustainable Technologies for Industry 5.0!"
+        },
+        {
+          "posted_by": "David",
+          "posted_on": "2023-12-13 07:25:35 PM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/408801905_746781720799564_7124541984490533583_n.jpg?stp=dst-jpg_p526x296&_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFlqNR0XH44GCu_Itz20EUNZr9aqmPEAXZmv1qqY8QBdiEbRQxh_nlZfYL5QXhzlssKOBmTne6AQtnvsMd_0vMU&_nc_ohc=OaaPZlDJ_dIAX9qa-Vh&_nc_ht=scontent.fdac31-1.fna&oh=00_AfDv0eFVY8Gi1Rb2Fro8B73iobZyzC9Z5gCljTfgYr0ulA&oe=65880851",
+          "content": "Green University Center for International Affairs (GCiA) is looking for Interns. Don't miss out on the opportunity! Scan the given QR Code to apply for the position!"
+        },
+        {
+          "posted_by": "Tom",
+          "posted_on": "2023-12-18 04:17:29 PM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/406321541_742812471196489_5723765613163233052_n.jpg?stp=dst-jpg_p180x540&_nc_cat=102&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHShU_k-lTca2BJLULPIDzrfko1ELzaNlV-SjUQvNo2VQG_IbEK6sN6DBsCQ5UMhwX4PEzCSd_k-3c8BxFiE6y5&_nc_ohc=OJB_GJfCAVsAX_BkWhE&_nc_ht=scontent.fdac31-1.fna&oh=00_AfDgVsSAsAuhdovRnOdqDaEmchMOnQw1sUvX8cu20QUPuQ&oe=65891F1F",
+          "content": "Get ready for a burst of creativity at EEE - Green University's -'EEE Green Poster Hackathon - Season 01' this Friday! Let your scientific ideas shine through vibrant posters. Express yourself, leave an impression!"
+        }
+      ]
+    },
+    {
+      "club_name": "Textile",
+      "club_post": [
+        {
+          "posted_by": "Eric",
+          "posted_on": "2023-12-19 06:40:10 PM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/337237359_249522747431238_7034540789191130737_n.jpg?stp=dst-jpg_s600x600&_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFcYaxdyndTP-re-ZEwMNnuISYu7j2yN7ghJi7uPbI3uHo36dCJ3oHfpW0yZvW_YbifEXeAyy1shxtsWNawYe_L&_nc_ohc=iYAuMWe-zogAX9RCdgl&_nc_ht=scontent.fdac31-1.fna&oh=00_AfAkAl6N5Hh1MVyllub-ChtOtQNROqrG38j9iNp35_9ypA&oe=65894703",
+          "content": "Industry visit Mithela Textile Industries Ltd Mithela Textile Industries Limited under Mithela Group is has been acknowledged by United States Green Building Council (USGBC) in the year 2018 for solid dyeing woven fabrics without polluting the environment. Bangladesh-based one of the sustainable Woven textile manufacturers, LEED platinum certified, Mithela Textile Industries Ltd We are thankful for giving us such a wonderful opportunity from which we learned a lot and which will be useful for us in the future."
+        },
+        {
+          "posted_by": "James",
+          "posted_on": "2023-12-17 05:38:47 PM",
+          "images": "https://scontent.fdac31-1.fna.fbcdn.net/v/t1.6435-9/87039793_1505580186273570_5912985345892286464_n.jpg?stp=dst-jpg_p526x395&_nc_cat=102&ccb=1-7&_nc_sid=3ba11c&_nc_eui2=AeEwBOJwQcA2ffwl9oeLv0KTlLK_8A8SFUGUsr_wDxIVQVWYCIyVgBgwURZmDrnehFWloerGR64_J6t5B0s_jl83&_nc_ohc=9y8_KeqqsD0AX8f9V0J&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCK1E_bGVqn8fv6Zymh5I1HI07IOKyqRmGezrTNwMGSNQ&oe=65AB65ED",
+          "content": "Department of Textile Engineering of Green University of Bangladesh conducted an Industrial visit at Horizon Group (5, B.K. Bari, Rajendrapur) on February 15, 2020. The visit was coordinated by Mr. Mohammad Ashrafrul Alam, Lecturer, Department of Textile engineering, whereas Mr. Arafat Hossain, Lecturer, Department of Textile Engineering, Mr. Md. Faisal Mahmud, Lecturer, Department of Textile Engineering, and Mr. Alamgir Hossain, Lecturer, Department of Textile Engineering also visited the industry."
+        }
+      ]
+    }
+  ]
+}

@@ -81,10 +81,10 @@ const AddItems = () => {
               <option disabled value="default">
                 Select a category
               </option>
-              <option value="breakFast">Break Fast</option>
-              <option value="lunch">Lunch</option>
-              <option value="snacks">Snacks</option>
-              <option value="drinks">Drinks</option>
+              <option value="Break Fast">Break Fast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Snacks">Snacks</option>
+              <option value="Drinks">Drinks</option>
             </select>
             {errors.category_name && (
               <span className="text-red-600">Category is required</span>

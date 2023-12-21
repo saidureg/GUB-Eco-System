@@ -42,14 +42,16 @@ const Navbar = () => {
         <NavLink to="/club">Club</NavLink>
       </li>
       <li>
-        <Link to="/dashboard/cart">
-          <button className="flex items-center gap-2">
-            <FaShoppingCart className="text-2xl" />
-            <div className="badge badge-secondary absolute top-0 right-0 -mr-6">
-              +{cart.length}
-            </div>
-          </button>
-        </Link>
+        {cart.length > 0 && (
+          <Link to="/dashboard/cart">
+            <button className="flex items-center gap-2">
+              <FaShoppingCart className="text-2xl" />
+              <div className="badge badge-secondary absolute top-0 right-0 -mr-6">
+                +{cart.length}
+              </div>
+            </button>
+          </Link>
+        )}
       </li>
     </>
   );
