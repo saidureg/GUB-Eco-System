@@ -20,6 +20,8 @@ import PrivateRoute from "./PrivateRoute";
 import Payment from "../pages/Dashboard/User/Payment/Payment";
 import PaymentHistory from "../pages/Dashboard/User/PaymentHistory/PaymentHistory";
 import ClubNews from "../pages/Dashboard/Moderator/ClubNews/ClubNews";
+import ShowBusLocation from "../pages/BusPoint/ShowBusLocation";
+import PaymentHistoryAdmin from "../pages/Dashboard/Admin/PaymentHistoryAdmin";
 
 const Router = createBrowserRouter([
   {
@@ -45,9 +47,13 @@ const Router = createBrowserRouter([
         element: <BusLocationTable />,
       },
       {
+        path: "/showMap",
+        element: <ShowBusLocation />,
+      },
+      {
         path: "/club",
         element: <Club />,
-        loader: () => fetch("http://localhost:5000/club"),
+        loader: () => fetch("https://gub-eco-system-server.vercel.app/club"),
       },
     ],
   },
@@ -115,6 +121,14 @@ const Router = createBrowserRouter([
         element: (
           <AdminRoute>
             <ManageUsers />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "paymentHistoryAdmin",
+        element: (
+          <AdminRoute>
+            <PaymentHistoryAdmin />
           </AdminRoute>
         ),
       },

@@ -113,11 +113,11 @@ const Payment = () => {
           <div className="form-control mt-6">
             {cart.length ? (
               <button className="btn btn-primary w-full">
-                Pay ${totalPrice}
+                Pay BDT{totalPrice}/-
               </button>
             ) : (
               <button className="btn cursor-not-allowed w-full" disabled>
-                Pay ${totalPrice}
+                Pay BDT{totalPrice}
               </button>
             )}
           </div>

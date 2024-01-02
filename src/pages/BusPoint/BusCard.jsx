@@ -33,7 +33,9 @@ const BusCard = ({ bus }) => {
               Schedule
             </button>
           </Link>
-          <button className="btn btn-primary">Location</button>
+          <Link to="/showMap">
+            <button className="btn btn-primary">Location</button>
+          </Link>
         </div>
       </div>
     </div>

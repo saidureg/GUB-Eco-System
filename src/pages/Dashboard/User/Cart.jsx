@@ -42,7 +42,7 @@ const Cart = () => {
       <SectionTitle subHeading="My Cart" heading="WANNA ADD MORE?" />
       <div className="flex justify-evenly items-center uppercase mb-10">
         <h3 className="text-xl">Total Order: {cart.length}</h3>
-        <h3 className="text-xl">Total Price: ${totalPrice.toFixed(2)}</h3>
+        <h3 className="text-xl">Total Price: BDT {totalPrice.toFixed(2)}/-</h3>
         {cart.length ? (
           <Link to="/dashboard/payment">
             <button className="btn btn-primary ">Pay</button>
@@ -86,7 +86,7 @@ const Cart = () => {
                   </td>
                   <td>{item.name}</td>
                   <td>{item.quantity}</td>
-                  <td> ${item.price}</td>
+                  <td> BDT {item.price}</td>
                   <th>
                     <button
                       onClick={() => handleDelete(item._id)}
